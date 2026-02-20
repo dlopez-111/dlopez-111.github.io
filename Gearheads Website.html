@@ -103,9 +103,39 @@ footer {
     padding: 30px;
     text-align: center;
 }
+
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.gallery h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
 </style>
-</head>
-<body>
 
 <header>
     <h1>Break The Cycle</h1>
@@ -129,6 +159,14 @@ footer {
             <p>Lack access to basic resources</p>
         </div>
     </div>
+</section>
+
+<section class="gallery">
+  <div class="gallery-grid">
+    <img src="Downloads/imae2.webp" alt="Photo 1">
+    <img src="Downloads/imae1.webp" alt="Photo 2">
+    <img src="Downloads/images3.jpg" alt="Photo 3">
+  </div>
 </section>
 
 <section class="causes">
